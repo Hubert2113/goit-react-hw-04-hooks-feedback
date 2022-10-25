@@ -11,11 +11,11 @@ export const Feedback = () => {
   let [bad, setBad] = useState(0);
 
   const btnFunctions = {
-    handleIncrementGood: () => setGood(good++),
+    handleIncrementGood: () => {setGood(good += 1)},
 
-    handleIncrementNeutral: () => setNeutral(neutral++),
+    handleIncrementNeutral: () => {setNeutral(neutral += 1)},
 
-    handleIncrementBad: () => setBad(bad++),
+    handleIncrementBad: () => {setBad(bad += 1)},
   }
 
   const countTotal = () => good + neutral + bad;
